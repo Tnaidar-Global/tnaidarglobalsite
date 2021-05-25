@@ -1,17 +1,17 @@
-.container img {
+.images-container img {
     width: 600px;
     height: 600px;
     border-radius: 30px;
     margin: 20px;
 }
 
-.container {
+.images-container {
     height: 100%;
     display: flex;
     justify-content: center;
 }
 
-.container li {
+.images-container li {
     list-style: none;
     display: inline-block;
 }

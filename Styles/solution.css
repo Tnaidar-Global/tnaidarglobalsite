@@ -66,3 +66,14 @@
     }
   }
   
+  .readmore-btn{
+    color: #0984e3;
+  }
+
+  .service-desc-readmore{
+    display: none;
+  }
+
+  .service-desc-readmore--show{
+    display: inline;
+  }

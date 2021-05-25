@@ -13,7 +13,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 9vh;
+    min-height: 11vh;
     background-color: #f8f8ff;
     font-family: "Poppins", sans-serif;
 }
@@ -22,7 +22,7 @@ nav {
     color: black;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 20px;
+    font-size: 40px;
 }
 
 
@@ -30,11 +30,15 @@ nav {
 .nav-links {
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    width: 40%;
 }
 
 .nav-links li {
     list-style: none;
+}
+
+.nav-links li:hover {
+    border-bottom: 2px solid #11c0e5;
 }
 
 .nav-links a {
@@ -42,7 +46,7 @@ nav {
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 

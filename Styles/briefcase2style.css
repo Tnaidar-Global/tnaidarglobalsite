@@ -37,7 +37,7 @@
   .split.left {
     left: 0;
     background-color: rgba(0, 0, 0, 0.4);
-    background-image: url("/Images/Glitch\ statue_1891\ \(2\).png");
+    background-image: url("/Images/Design\ pic.jpg");
     background-size: cover;
     background-blend-mode: multiply;
   }
@@ -45,7 +45,7 @@
   .split.right {
     right: 0;
     background-color: rgba(0, 0, 0, 0.4);
-    background-image: url("/Images/computer-source-code.jpg");
+    background-image: url("/Images/Dev\ pic.jpg");
     background-size: cover;
     background-blend-mode: multiply;
   }

@@ -38,6 +38,7 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.4);
     background-image: url("/Images/Glitch\ statue_1891\ \(2\).png");
+    background-size: cover;
     background-blend-mode: multiply;
   }
   
@@ -45,6 +46,7 @@
     right: 0;
     background-color: rgba(0, 0, 0, 0.4);
     background-image: url("/Images/computer-source-code.jpg");
+    background-size: cover;
     background-blend-mode: multiply;
   }
   

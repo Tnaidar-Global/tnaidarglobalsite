@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9e05af2202.js" crossorigin="anonymous"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins';
+        }
+
+        .card-container {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            align-items: center;
+            background-color: antiquewhite;
+            overflow: auto;
+        }
+
+        .card {
+            max-width: 550px;
+            max-height: 600px;
+            overflow: auto;
+        }
+
+        .rotate {
+            float: left;
+            transform: rotate(-90deg);
+        }
+
+        .card-image {
+            height: 400px;
+            width: 300px;
+            margin-top: 25%;
+            margin-left: 0%;
+        }
+
+        .card .social-media-icons {
+            justify-content: right;
+        }
+
+        .social-media-icons i {
+            padding: 5px;
+            color: black;
+        }
+
+        .info-container {
+            padding: 16px;
+            width: 50%;
+            position:absolute;
+            top: 30%;
+            transform:translateX(100%);
+            overflow:auto;
+            padding-left: 200px;
+            padding-right: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card-container">
+            <center>
+                <div class="card">
+                    <div class="rotate">
+                        Senior Full-Stack Developer
+                    </div>
+
+                    <img src="Images/sabiq.jpg" alt="" class="card-image" />
+
+                    <div class="social-media-icons">
+                        <!--facebook-->
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <!--instagram-->
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <!--linkedin-->
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </center>
+        </div>
+        
+        <div class="info-container">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic id, magni eum consequuntur, alias, autem ad accusantium dolore officia quaerat reprehenderit provident ipsa. Ducimus quos ut voluptates, dolores, obcaecati recusandae soluta autem optio perspiciatis doloremque dignissimos itaque. Recusandae dolorem perspiciatis assumenda tempore sed a corrupti, ducimus modi incidunt dolores aliquam.
+        </div>
+    </div>
+</body>
+</html>

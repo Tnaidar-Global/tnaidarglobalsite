@@ -21,14 +21,14 @@
             width: 50%;
             height: 100%;
             align-items: center;
-            background-color: antiquewhite;
+            background-color: #08526f;
         }
 
         .card {
             margin-top: 25%;
             max-width: 300px;
             max-height: 600px;
-            background-color:burlywood;
+            background-color:#60dbe0;
             overflow: visible;
         }
 
@@ -36,9 +36,13 @@
             display: inline-flex;
         }
         
-        .rotate {
+        .position {
             float: left;
             transform: rotate(-90deg);
+            color:#60dbe0;
+            white-space: nowrap;
+            font-weight: bold;
+            color: white;
         }
             
         .card-image {
@@ -53,6 +57,21 @@
             padding: 15px;
             float: inline-end;
             color: black;
+        }
+
+        .name {
+            transform: translateX(0%) translateY(-150%) rotate(-90deg);
+            text-transform: uppercase;
+            font-size: 100px;
+            line-height: 100%;
+            color:white;
+            letter-spacing: 20px;
+            font-weight: bold;
+        }
+
+        .last-name {
+            opacity: 0.4;
+            color: #08526f;
         }
 
         .info-container {
@@ -74,11 +93,11 @@
             <center>
                 <div class="card">
                     <div class="special">
-                        <div class="rotate">
+                        <div class="position">
                             Senior Full-Stack Developer
                         </div>
 
-                        <img src="Images/sabiq.jpg" alt="" class="card-image" />
+                        <img src="Images/avatars/sabiq.jpg" alt="" class="card-image" />
                     </div>
                     
 
@@ -92,6 +111,11 @@
                     </div>
                 </div>
             </center>
+        </div>
+
+        <div class="name">
+            <span class="first-name">Sabiq</span><br>
+            <span class="last-name">Sabry</span>
         </div>
         
         <div class="info-container">

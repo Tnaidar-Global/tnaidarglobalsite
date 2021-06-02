@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'LemonMilk';
+            src: url(fonts/finalSitefonts/LemonMilk/LEMONMILK-Light.woff) format('woff');
+        }
+
+        body {
+            background-color: #08526f;
+            font-family: 'LemonMilk';
+        }
+
+        .heading {
+            font-size: 30px;
+            color:white;
+            max-width: fit-content;
+            border-bottom: 1px solid #08526f;
+            overflow: hidden;
+            justify-self: center;
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+
+        .content-container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .member-img {
+            height: 410px;
+            width: 300px;
+            position: relative;
+            object-fit: cover;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem 2rem;
+            margin-bottom: 50px;
+        }
+
+        .text-content {
+            position:relative;
+            font-size: 12px;
+            color: white;
+            padding-top: 45%;
+            line-height: 40px;
+        }
+
+        .text-content-1 {
+            text-align: left;
+            float: right;
+            margin-left: -200px;
+            overflow: visible;
+        }
+
+        .text-content-2 {
+            text-align: right;
+            float: left;
+            margin-right: -200px;
+            overflow: visible;
+        }
+
+        .name {
+            font-size: 1.4rem;
+            font-weight: bolder;
+        }
+
+        .footer {
+            font-family: 'Poppins';
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <center>
+        <div class="heading">
+            <h1>Our Team</h1>
+        </div>
+        </center>
+        <center>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="Images/avatars/nabeel.jpg" alt="" class="member-img">
+                <div class="text-content text-content-1">
+                    <span class="name">Nabeel Marikar</span><br>
+                    Head of Strategy
+                </div>
+            </div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item">
+                <img src="Images/avatars/abithan.jpg" alt="" class="member-img">
+                <div class="text-content text-content-2">
+                    <span class="name">Abithan Muralitharan</span><br>
+                    Head of Operations
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="Images/avatars/sabiq.jpg" alt="" class="member-img">
+                <div class="text-content text-content-1">
+                    <span class="name">Sabiq Sabry</span><br>
+                    Senior Full-Stack Developer
+                </div>
+            </div>  
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>          
+            <div class="grid-item">
+                <img src="Images/avatars/senthu3.jpg" alt="" class="member-img">
+                <div class="text-content text-content-2">
+                    <span class="name">Senthuran "SNOOP" Srivelnathan</span><br>
+                    Social Media Manager
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="Images/avatars/adshayan2.jpeg" alt="" class="member-img">
+                <div class="text-content text-content-1">
+                    <span class="name">Adshayan Balachandran</span><br>
+                    Junior Full-Stack Developer
+                </div>
+            </div>
+        </div>
+        </center>
+    </div>
+
+    <!-- Footer Start -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Tnaidar</h4>
+                    <ul>
+                        <li><a href="index.html">Line-Up</a></li>
+                        <li><a href="solution.html">Solutions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="#">Affiliate Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="contactus.html">Say Hello</a></li>
+                        <li><a href="contactus.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Direct Links</h4>
+                    <ul>
+                        <li><a href="#">Design Portfolio</a></li>
+                        <li><a href="#">Development Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/tnaidar.inc" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/tnaidar.inc/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/tnaidar/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

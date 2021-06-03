@@ -20,7 +20,7 @@
         }
 
         body {
-            background-color: #08526f;
+            background-color: black;
             font-family: 'LemonMilk';
         }
 
@@ -38,42 +38,30 @@
         .content-container {
             width: 90%;
             margin: 0 auto;
+            overflow: auto;
         }
 
         .member-img {
             height: 410px;
             width: 300px;
-            position: relative;
             object-fit: cover;
         }
 
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 2rem 2rem;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 4rem;
             margin-bottom: 50px;
         }
 
-        .text-content {
-            position:relative;
-            font-size: 12px;
-            color: white;
-            padding-top: 45%;
-            line-height: 40px;
+        .grid-item-2 {
+            grid-column-start: 2;
+            grid-column-end: 4;
         }
 
-        .text-content-1 {
-            text-align: left;
-            float: right;
-            margin-left: -200px;
-            overflow: visible;
-        }
-
-        .text-content-2 {
-            text-align: right;
-            float: left;
-            margin-right: -200px;
-            overflow: visible;
+        .grid-item-3 {
+            grid-column-start: 1;
+            grid-column-end: 3;
         }
 
         .name {
@@ -84,57 +72,252 @@
         .footer {
             font-family: 'Poppins';
         }
+
+        .detail-box-text {
+            padding: 20px 20px 20px 0px;
+            position: relative;
+            color: white;
+        }
+
+        .detail-box-text a {
+            text-decoration: none;
+        }
+        .detail-name{
+            font-size: 2rem;
+            color: white;
+            font-weight: 700;
+            text-align: left;
+        }
+        .member-social-links{
+            display: flex;
+            align-items: center;
+        }
+        .member-social-links a{
+            width:30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0,0,0,0.1);
+            margin: 5px;
+            border-radius: 50%;
+            font-size: 0.9rem;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 0px;
+        }
+        .member-social-links a:hover{
+            color: #fff;
+            background-color: #181818;
+            transition: all ease 0.3s;
+        }
+        .detail-box-text .position{
+            color: white;
+            margin: 0px;
+            padding: 10px 0px;
+            width:97%;
+        }
+        .detail-box-text p{
+            color: white;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .detail-box-text p:first-of-type { 
+            border-top: 1px solid #414141;
+            padding-top: 10px;
+        }
+        .view-work-btn{
+            width:150px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            background-color: #202020;
+        }
+        .view-work-btn:hover,
+        .cancel:hover{
+            color: #fff;
+            background-color: #0e0e0e;
+            transition: all ease 0.3s;
+        }
+        .cancel{
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            width:40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            background-color: #202020;
+        }
     </style>
 </head>
 <body>
     <div class="content-container">
         <center>
-        <div class="heading">
-            <h1>Our Team</h1>
-        </div>
+            <div class="heading">
+                <h1>Our Team</h1>
+            </div>
         </center>
         <center>
-        <div class="grid-container">
-            <div class="grid-item">
-                <img src="Images/avatars/nabeel.jpg" alt="" class="member-img">
-                <div class="text-content text-content-1">
-                    <span class="name">Nabeel Marikar</span><br>
-                    Head of Strategy
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="Images/avatars/nabeel.jpg" alt="" class="member-img">
+                </div>
+                <div class="grid-item-2">
+                    <div class="detail-box-text detail-box-text-left">
+                        <!--name-->
+                        <a href="#" class="detail-name">Nabeel Marikar</a>
+                        <!--position---->
+                        <h5 class="position">Position: Head of Strategy</h5>
+                        <!--social-links-->
+                        <div class="member-social-links">
+                            <!--facebook
+                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            -->
+                            <!--instagram-->
+                            <a href="https://www.instagram.com/nabeel_marikar/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <!--linkedin-->
+                            <a href="https://www.linkedin.com/in/nabeel-marikar-a62a42174/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <!--details--->
+                        <br>
+                        <p>
+                            <i>
+                                Tends to use the word ‘’machan’’ in every sentence of a personal conversation for absolutely no reason. 
+                            </i>
+                        </p>
+                        <br>
+                        <p>An old soul and forward thinker, Nabeel has a never ending fascination towards all things retro. He firmly believes that people are the single most valuable asset of any organization. 
+                        </p>
+                        <br>
+                        <p>
+                            As the Head of Strategy and Growth, he brings with him his years of knowledge and experience in the Digital Marketing sphere and focuses on marketing, product development and the future of Tnaidar Global.
+                        </p>
+                        <br>
+                        <!--view-btn---->
+                        <a href="#" class="view-work-btn">View Work</a>
+                    </div>
+                </div>
+                <div class="grid-item-3">
+                    <div class="detail-box-text detail-box-text-right">
+                        <!--name-->
+                        <a href="#" class="detail-name">Abithan Muralitharan</a>
+                        <!--position---->
+                        <h5 class="position">Position: Head of Operations | Key Account Manager</h5>
+                        <!--social-links-->
+                        <div class="member-social-links">
+                            <!--facebook-->
+                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <!--instagram-->
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <!--linkedin-->
+                            <a href="https://www.linkedin.com/in/abithan-muralitharan-9342746b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <!--details--->
+                        <br>
+                        <p>
+                            <i>
+                                Zealous photographer & recovering tea addict
+                            </i>
+                        </p>
+                        <br>
+                        <p>
+                            Being our Head of Operations & Key Account Management, Abithan keeps the heart of our business beating as he overlooks communications and execution of all tasks.
+                        </p>
+                        <br>
+                        <p>
+                            When out of hours, he prefers to live in the moment freezing time with his camera, capturing happy moments that get added to his memoir. Although, we at Tnaidar Global would like to have a word with him regarding his tea fixation.
+                        </p>
+                        <br>
+                        <!--view-btn---->
+                        <a href="#" class="view-work-btn">View Work</a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="Images/avatars/abithan.jpg" alt="" class="member-img">
+                </div>
+                <div class="grid-item">
+                    <img src="Images/avatars/sabiq.jpg" alt="" class="member-img">
+                </div>  
+                <div class="grid-item-2">
+                    <div class="detail-box-text">
+                        <!--name-->
+                        <a href="#" class="detail-name">Sabiq Sabry</a>
+                        <!--position---->
+                        <h5 class="position">Position: Senior Full Stack Developer</h5>
+                        <!--social-links-->
+                        <div class="member-social-links">
+                            <!--facebook-->
+                            <a href="https://www.facebook.com/sabiqsabry48/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <!--instagram-->
+                            <a href="https://www.instagram.com/sabiqsabry48/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <!--linkedin-->
+                            <a href="https://www.linkedin.com/in/sabiqsabry48/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <!--details--->
+                        <br>
+                        <p>
+                            <i>
+                                Finds the concept of crypto amusing & could be a potential MKBHD superfan.
+                            </i>
+                        </p>
+                        <br>
+                        <p>
+                            Being our Senior Developer, Sabiq governs all things Web & Mobile at Tnaidar Global, he channels his programming acumen into making sure all our clients’ ideas are translated into a tangible visual form.
+                        </p>
+                        <br>
+                        <p>
+                            He says most of his hobbies dwindled once puberty became a thing but has gotten into watching anime and listening to self-development audiobooks.
+                        </p>
+                        <br>
+                        <!--view-btn---->
+                        <a href="https://github.com/sabiqsabry48" target="_blank" class="view-work-btn">View Work</a>
+                    </div>
+                </div>
+                <div class="grid-item-3">
+                    <div class="detail-box-text">
+                        <!--name-->
+                        <a href="#" class="detail-name">Senthuran Srivelnathan</a>
+                        <!--position---->
+                        <h5 class="position">Position: Social Media Content Manager</h5>
+                        <!--social-links-->
+                        <div class="member-social-links">
+                            <!--facebook-->
+                            <a href="https://www.facebook.com/senthuran26" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <!--instagram-->
+                            <a href="https://www.instagram.com/senthuran26/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <!--linkedin-->
+                            <a href="https://www.linkedin.com/in/senthuran26/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <!--details--->
+                        <br>
+                        <p>
+                            <i>
+                                Cat Dad, Car Nut & Aspiring Horologist
+                            </i>
+                        </p>
+                        <br>
+                        <p>
+                            Senthuran has dabbled in multiple fields spanning Graphic design, Marketing and even Computer Networking. Knowing the nuts and bolts of social media & having found his calling in being a witty wordsmith he joined Tnaidar Global as our Social Media Manager.
+                        </p>
+                        <br>
+                        <p>
+                            When he’s not gawking at Thesaurus.com writing a copy for our clients you can find him hunting for great deals on vintage watches or in the garage fixing his car.
+                        </p>
+                        <br>
+                        <!--view-btn---->
+                        <a href="#" class="view-work-btn">View Work</a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="Images/avatars/senthu3.jpg" alt="" class="member-img">
                 </div>
             </div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item">
-                <img src="Images/avatars/abithan.jpg" alt="" class="member-img">
-                <div class="text-content text-content-2">
-                    <span class="name">Abithan Muralitharan</span><br>
-                    Head of Operations
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="Images/avatars/sabiq.jpg" alt="" class="member-img">
-                <div class="text-content text-content-1">
-                    <span class="name">Sabiq Sabry</span><br>
-                    Senior Full-Stack Developer
-                </div>
-            </div>  
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>          
-            <div class="grid-item">
-                <img src="Images/avatars/senthu3.jpg" alt="" class="member-img">
-                <div class="text-content text-content-2">
-                    <span class="name">Senthuran "SNOOP" Srivelnathan</span><br>
-                    Social Media Manager
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="Images/avatars/adshayan2.jpeg" alt="" class="member-img">
-                <div class="text-content text-content-1">
-                    <span class="name">Adshayan Balachandran</span><br>
-                    Junior Full-Stack Developer
-                </div>
-            </div>
-        </div>
         </center>
     </div>
 
@@ -180,5 +363,6 @@
             </div>
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/9e05af2202.js" crossorigin="anonymous"></script>
 </body>
 </html>
